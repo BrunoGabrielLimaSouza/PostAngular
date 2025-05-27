@@ -1,0 +1,6 @@
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+    <div *ngIf="post && !errorMessage" class="post-detail">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.body }}</p>
+      <a routerLink="/" class="btn">Back to List</a>
+    </div>
